@@ -1,4 +1,4 @@
-#Instructions
+##Current branch:
 
 Step 1 - `git tag 01-getting-started`:
 
@@ -28,3 +28,5 @@ module.exports = {
 
 7. Add: `<script src="./bundle-and-put-it-here.js"></script>` to index.html
 8. Open `index.html` in browser
+
+##Previous
