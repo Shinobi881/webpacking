@@ -1,0 +1,12 @@
+{
+  "name": "webpacking",
+  "version": "1.0.0",
+  "description": "Just keeping it simple with Webapck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Webapck"],
+  "author": "Muhsin Abdul-Musawwir",
+  "license": "ISC"
+}
