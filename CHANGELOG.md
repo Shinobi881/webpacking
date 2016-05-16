@@ -1,13 +1,68 @@
 #Current -------
 
-####npm stuff:
+##File changes:
+
+1. `webpack.config.js`
+```
+entry: './index.jsx',
+output: {
+  filename: './bundle.js'
+}
+...
+  { test: /\.jsx?$ ... }
+
+```
+*Then rename the entry file*
+
+2. `.babelrc`
+  1. `[..."react"]`
+
+3. `index.html`
+  1. Add `<div id="app"></div>`
   
-  - `npm i -D webpack-dev-server`
-  - `"devserver": "webpack-dev-server"` to `scripts` in `package.json`
+  2. Change `<script src="./bundle.js">`
+  *Then delete current the output file*
+
+4. `another-file.js`
+  - Rename to `app.jsx`
+
+5. `.gitignore`
+  - `bundle.js`
+
+##npm stuff:
+  - `npm i -S react react-dom`
+  - `npm i -D babel-preset-react`
+
+##React stuff:
+
+1. `index.jsx`
+```
+import React from 'react';
+import { render } from 'react-dom';
+import App from './app.jsx';
+
+render(<App />, document.getElementById('app'));
+```
+
+2. `app.jsx`
+```
+import React, { Component } from 'react';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <h1>We're Webpack and Reacting</h1>
+      </div>
+    )
+  }
+}
+
+export default App;
+```
 
 ##Then:
- - `npm run devserver`
- - Browser to: `localhost:8080/webpack-dev-server/`
+- `npm run devserver`
 
 
 #Previous ------
@@ -17,39 +72,10 @@
 1. `.babelrc` - in the root dir
 
 ####npm stuff:
-
-  - `npm i -D babel`
-  - `npm i -D babel-core`
-  - `npm i -D babel-loader`
-  - `npm i -D babel-preset-es2015`
-  - `npm i -D babel-preset-stage-0`
-                or 
-  - `npm i -D babel-core babel-loader babel-preset-es2015 babel-preset-stage-0`
-
-####Modifications:
-
-1. `.babelrc`
-```
-{
-presets: ["es2015", "stage-0"]
-}
-```
-
-2. `webpack.confi.js`
-```
-output: {
-  ...
-},
-module: {
-  loaders: [
-    { test: /\.js$/, loader: 'babel-loader' exclude: /node_modules/ }
-  ]
-}
-
-```
+  
+  - `npm i -D webpack-dev-server`
+  - `"devserver": "webpack-dev-server"` to `scripts` in `package.json`
 
 ##Then:
-1. Change `require` to import statements (appropriatey)
-2. Change `module.export` to `export`, `export default` or `exports`
-
-
+ - `npm run devserver`
+ - Browser to: `localhost:8080/webpack-dev-server/`

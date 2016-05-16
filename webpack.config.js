@@ -1,12 +1,12 @@
 module.exports = {
   context: __dirname,
-  entry: './grab-all-my-code-from-this-file.js',
+  entry: './index.jsx',
   output: {
-    filename: './concat-and-put-all-that-stuff-here.js'
+    filename: './bundle.js'
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel', exclude: /node_modules/ }
+      { test: /\.jsx?$/, loader: 'babel', exclude: /node_modules/ }
     ]
   }
 }
