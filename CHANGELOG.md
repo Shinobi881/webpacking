@@ -1,4 +1,4 @@
-#Instructions
+##Current 
 
 Step 1 - `git tag 02-make-it-work`:
 
@@ -34,3 +34,4 @@ module.exports = {
 2. `module.exports` something from it
 3. `require` it to the entry file
 4. Create an element on the page
+

@@ -2,4 +2,3 @@ node_modules
 npm-debug.log
 bundle.js
 concat-and-put-all-that-stuff-here.js
-git-tags.js
