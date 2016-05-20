@@ -22,13 +22,13 @@ This is an introduction to `webpack`. We're gonna keep it simple and cover only 
 1. Bare minimums (in relationship to all the stuff above)
 2. [Some] Common loaders
 3. [Some] Common error messages
-4. Using with node
+4. Webpack and React
 5. Simple production config
 
 ####If we have time:
 
-1. Deploy to Heroku
-2. Webpack and React
+1. Webpack and Node
+2. Deploy to Heroku
 3. Webpack and Angular 1.5
 
 *INSTRUCTIONS.md will only provide instructions relative to its branch. See CHANGELOG.md for all instructions.*
